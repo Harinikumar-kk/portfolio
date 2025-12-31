@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-900 transition-colors duration-300;
+    font-family: 'Outfit', sans-serif;
+    background: radial-gradient(circle at 50% 0%, #f0e6dd 0%, #d7ccc8 100%);
+  }
+
+  .dark body {
+    @apply text-gray-100;
+    background: radial-gradient(circle at 50% 0%, #3e2723 0%, #1a0f0d 100%);
+  }
+}
